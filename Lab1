@@ -1,0 +1,88 @@
+public class Q1 {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+
+	}
+
+}
+
+
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		String color = "Blue"; // Using string variable to store the name of a color
+		System.out.println("My favorite color is: " + color +"."); // Printing out color using single println call
+
+	}
+
+}
+
+
+
+import java.util.Scanner;
+public class Q3 {
+
+	public static void main(String[] args) {
+		
+		Scanner decnum = new Scanner(System.in); // Practice using scanner
+		System.out.print("Enter Number a: ");
+		double a = decnum.nextDouble(); // inputs number into the double variable a
+		System.out.print("Enter Number b: ");
+		double b = decnum.nextDouble(); // inputs number into the double variable b
+
+		double sum = a + b; // calculates value of sum of a and b
+		double div = a % b; // calculates value of division of a and b
+		double sub = a - b; // calculates value of subtraction of a and b
+		double mul = a * b; // calculates value of multiplication of a and b	
+
+		System.out.println("\nResulting Sum: " + sum); 
+		System.out.println("Resulting Division: " + div); 
+		System.out.println("Resulting Subtraction: " + sub); 		
+		System.out.println("Resulting Multiplication: " + mul); 
+
+	}
+
+}
+
+
+
+import java.util.Scanner;
+public class Q4 {
+
+	public static void main(String[] args) {
+	Scanner temp = new Scanner(System.in);
+	System.out.print("Enter Fahrenheit Temperature: ");
+	float F = temp.nextInt(); // Practice using float when dealing with conversions of temperature
+	System.out.println("\n212 degrees Fahrenheit is 373 Kelvin. ");
+
+	double kel = (float) 273 + ((F-32.0) * (5.0/9.0)); // Practice using double variables for certain results and inputing equations
+
+	System.out.print("\nTemperature in Kelvin: ");
+	System.out.print(kel);
+	
+	// 
+
+	}
+
+}
+
+
+import java.util.Scanner;
+public class Q5 {
+
+	public static void main(String[] args) {
+		Scanner numGrams = new Scanner(System.in);
+		System.out.print("Enter mass in number of grams: ");
+		
+		double g = numGrams.nextDouble(); // inputs grams as double variable
+		double c = 3.00e8; // approximation of the speed of light 
+		double eJ = (g * 1000) * (c*c); // equation that calculates Energy in Joules
+
+		System.out.println("\nE = m(c^2)");
+		System.out.print("\nEnergy in Joules: " + eJ + "J");
+
+	}
+
+}
